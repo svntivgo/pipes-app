@@ -12,7 +12,6 @@ import { VentasModule } from './ventas/ventas.module';
 import localeEs from '@angular/common/locales/es-CO';
 import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
-import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 registerLocaleData(localeEs);
 registerLocaleData(localeFr);
 
@@ -26,7 +25,6 @@ registerLocaleData(localeFr);
     AppRouterModule,
     SharedModule,
     VentasModule,
-    CdkVirtualScrollViewport
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-CO' }
